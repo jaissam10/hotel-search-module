@@ -79,6 +79,11 @@ main.hotel-search-content {
             color: #000;
         }
     }
+    .react-autosuggest__suggestions-container{
+        z-index: 99999;
+        position: absolute;
+        background: #fff;
+    }
     .react-autosuggest__suggestions-list {
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
         border-radius: 4px
