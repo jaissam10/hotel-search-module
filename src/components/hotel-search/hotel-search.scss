@@ -113,7 +113,7 @@ main.hotel-search-content {
         }
         .rooms-div {
             padding: 10px 20px;
-            /* ul {
+            ul {
                 display: flex;
                 list-style-type: none;
                 padding: 0;
@@ -122,12 +122,18 @@ main.hotel-search-content {
                 font-size: 14px;
                 font-weight: 700;
                 border-radius: 4px;
+                width: fit-content;
                 li {
                     padding: 0 15px;
                     line-height: 28px;
                     border-left: 1px solid #d9d9d9;
+                    &.selected {
+                        background-color: #065af3;
+                        color: #fff;
+                    }
                 }
-            } */
+
+            }
         }
     }
 

@@ -7,8 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { authRequest } from "../../redux/actions/auth";
 import { cityListRequest } from "../../redux/actions/city-list";
 import { nationalityListRequest } from "../../redux/actions/nationality-list";
-import { Radio } from 'antd';
-import 'antd/dist/antd.css';
 import Moment from "react-moment";
 
 
@@ -269,18 +267,18 @@ const HotelSearch = () => {
                                                                 </span>
                                                             </div>
                                                             <div className="flex-13">
-                                                                {/* <ul>
+                                                                <ul>
                                                                     <li>1</li>
-                                                                    <li>2</li>
+                                                                    <li className="selected">2</li>
                                                                     <li>3</li>
                                                                     <li>4</li>
-                                                                </ul> */}
-                                                                <Radio.Group onChange={() => {}} defaultValue="2">
+                                                                </ul>
+                                                                {/* <Radio.Group onChange={() => {}} defaultValue="2">
                                                                     <Radio.Button value="1">1</Radio.Button>
                                                                     <Radio.Button value="2">2</Radio.Button>
                                                                     <Radio.Button value="3">3</Radio.Button>
                                                                     <Radio.Button value="4">4</Radio.Button>
-                                                                </Radio.Group>
+                                                                </Radio.Group> */}
                                                             </div>
                                                         </div>
                                                         <div className="d-flex mt-3 child-room-div">
@@ -292,11 +290,16 @@ const HotelSearch = () => {
                                                                 </span>
                                                             </div>
                                                             <div  className="flex-13">
-                                                                <Radio.Group onChange={() => {}} defaultValue="0">
+                                                                <ul>
+                                                                    <li className="selected">0</li>
+                                                                    <li>1</li>
+                                                                    <li>2</li>
+                                                                </ul>
+                                                                {/* <Radio.Group onChange={() => {}} defaultValue="0">
                                                                     <Radio.Button value="0">0</Radio.Button>
                                                                     <Radio.Button value="1">1</Radio.Button>
                                                                     <Radio.Button value="2">2</Radio.Button>
-                                                                </Radio.Group>
+                                                                </Radio.Group> */}
                                                             </div>
                                                         </div>
                                                     </div>
